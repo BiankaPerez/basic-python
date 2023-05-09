@@ -1,0 +1,46 @@
+Endpoint 1: foods
+Aqui el endpoint permite a los usuarios obtener, agregar, actualizar y eliminar información sobre los alimentos que han consumido. 
+
+- GET foods : devuelve una lista de todos los alimentos que el usuario ha consumido.
+solicitud: GET /foods
+- POST foods: agrega un nuevo alimento a la lista de alimentos consumidos por el usuario.
+ejemplo :  
+"name": "Manzana",
+  "calories": 95,
+  "date_consumed": "2022-06-02"
+- PUT foods : actualiza la información de un alimento específico que el usuario ha consumido.
+solicitud: PUT /foods/1
+datos de cuerpo: "name": "Manzana",
+  "calories": 85,
+  "date_consumed": "2022-06-02
+ respuesta:
+"id": 1,
+  "name": "Manzana",
+  "calories": 85,
+  "date_consumed": "2022-06-02"
+   - DELETE foods elimina un alimento específico de la lista de alimentos consumidos por el usuario.
+respuesta:
+El alimento con id=1 ha sido eliminado.
+
+Endpoint2 nutrientes
+Método GET
+Devuelve una lista de todos los nutrientes.
+ejemplo respuesta:
+"id": 1,
+    "name": "Proteína",
+    "daily_intake": 50
+Método POST
+Agrega un nuevo nutriente a la lista.
+ejemplo respuesta:
+  "name": "Fibra",
+  "daily_intake": 25
+Método PUT
+Actualiza la información de un nutriente específico.
+"name": "Manzana",
+"calories": 95,
+"date_updated": "2022-06-02"
+Método¨delete
+"id": 1
+ "food": Manzana
+ "food id" :1
+ delete_food(food_id)
