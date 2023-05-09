@@ -5,7 +5,7 @@ list_shopping = ["apples", "peaches", "soap"]
 
 print(f"{name}, {age}")
 
-print(name + " " + last_name + " " + str(age))
+print(name + " " + last_name + " " +str (age))
 
 print(list_shopping)
 
